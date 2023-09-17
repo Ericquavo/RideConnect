@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        /* Basic styling for the dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        /* Styling for user-specific content */
+        .user-panel {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        /* Style for form elements */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* Style for submit button */
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your User Dashboard</h1>
+        
+        <!-- User-specific content -->
+        <div class="user-panel">
+            <h2>User Information</h2>
+            <form method="POST" action="save_profile.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <input type="submit" value="Save Profile">
+            </form>
+        </div>
+        
+        <div class="user-panel">
+            <h2>Your Rides</h2>
+            <ul>
+                <li>Ride 1</li>
+                <li>Ride 2</li>
+                <li>Ride 3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

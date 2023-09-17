@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        /* Basic styling for the dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        /* Styling for admin-specific content */
+        .admin-panel {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        /* Custom CSS for the input fields */
+        .admin-panel input[type="text"],
+        .admin-panel input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        /* Style for the buttons */
+        .admin-panel .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Admin Dashboard</h1>
+        
+        <!-- Admin-specific content -->
+        <div class="admin-panel">
+            <h2>Admin Information</h2>
+            <p>Password: <input type="password" value="********"></p> <!-- Change input type to "password" -->
+            <p>Email: <input type="text" value="admin@example.com"></p> <!-- Change input type to "text" -->
+        </div>
+        
+        <div class="admin-panel">
+            <h2>Site Management Options</h2>
+            <ul>
+                <li>Web Management</li>
+                <li>Admin Access</li>
+                <li>Private Site</li>
+            </ul>
+        </div>
+
+        <!-- Login and Logout buttons -->
+        <div class="admin-panel">
+            <button class="btn" onclick="login()">Login</button>
+            <button class="btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            // Add login functionality here
+            alert("Logged in!");
+        }
+
+        function logout() {
+            // Add logout functionality here
+            alert("Logged out!");
+        }
+    </script>
+</body>
+</html>
